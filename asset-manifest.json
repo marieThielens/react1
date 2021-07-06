@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/marieThielens.github.io/react1/static/css/main.2e17cf44.chunk.css",
+    "main.js": "/marieThielens.github.io/react1/static/js/main.a2215eeb.chunk.js",
+    "main.js.map": "/marieThielens.github.io/react1/static/js/main.a2215eeb.chunk.js.map",
+    "runtime-main.js": "/marieThielens.github.io/react1/static/js/runtime-main.822bebfc.js",
+    "runtime-main.js.map": "/marieThielens.github.io/react1/static/js/runtime-main.822bebfc.js.map",
+    "static/js/2.3f81d56d.chunk.js": "/marieThielens.github.io/react1/static/js/2.3f81d56d.chunk.js",
+    "static/js/2.3f81d56d.chunk.js.map": "/marieThielens.github.io/react1/static/js/2.3f81d56d.chunk.js.map",
+    "static/js/3.feb46d7e.chunk.js": "/marieThielens.github.io/react1/static/js/3.feb46d7e.chunk.js",
+    "static/js/3.feb46d7e.chunk.js.map": "/marieThielens.github.io/react1/static/js/3.feb46d7e.chunk.js.map",
+    "index.html": "/marieThielens.github.io/react1/index.html",
+    "static/css/main.2e17cf44.chunk.css.map": "/marieThielens.github.io/react1/static/css/main.2e17cf44.chunk.css.map",
+    "static/js/2.3f81d56d.chunk.js.LICENSE.txt": "/marieThielens.github.io/react1/static/js/2.3f81d56d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.822bebfc.js",
+    "static/js/2.3f81d56d.chunk.js",
+    "static/css/main.2e17cf44.chunk.css",
+    "static/js/main.a2215eeb.chunk.js"
+  ]
+}
