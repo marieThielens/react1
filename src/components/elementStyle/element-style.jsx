@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import style from './element.style.module.css';
+import style from './element-style.module.css';
 
 const ElementStyle = (props) => {
 
