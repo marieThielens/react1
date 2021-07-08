@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { Component } from 'react'; // c'est l'API qui permet de gérer les composants
+import PropTypes from 'prop-types';
 
 
 // Pour définir un composant React avec une classe, vous devez étendre React.Component
@@ -13,9 +14,9 @@ class ClassExemple extends React.Component {
     super(props);
     // On peut utiliser this grace à super  
 
-    this.props = {
-      incr: 1
-    }
+    // this.props = {
+    //   incr: 1
+    // };
 
       // state est l'état initial
       this.state = { // L'état de mon bouton démarre à 0
@@ -50,6 +51,12 @@ class ClassExemple extends React.Component {
         </>
       );
     }
-}
+
+
+  }
+
+  ClassExemple.defaultProps = {
+    incr : 1
+  }
 
 export default ClassExemple;
