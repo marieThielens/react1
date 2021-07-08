@@ -8,6 +8,15 @@ import Student from './components/student/student';
 // nanoid pour générer id
 import { nanoid } from 'nanoid'; // npm install nanoid
 
+import AffichageConditionnel from './components/affichageConditionnel/affichageConditionnel';
+
+import StateUtilisation from './components/state/state-utilisation';
+import DateDuJour from './components/date-du-jour/date-du-jour';
+
+import Compteur from './components/compteur/compteur';
+
+import ClassExemple from './class/classVsHook';
+
 
 function App() {
 
@@ -35,7 +44,15 @@ function App() {
 
       {/* <MaCollection gens={gens}/> */}
 
+
+      {/* < AffichageConditionnel estInscrit={false}/>
       <Student etudiants= {etudiants}/>
+
+     <StateUtilisation />
+
+     <DateDuJour /> */}
+     {/* <Compteur /> */}
+     <ClassExemple />
 
     </div>
   );
