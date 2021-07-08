@@ -13,10 +13,13 @@ class ClassExemple extends React.Component {
     super(props);
     // On peut utiliser this grace à super  
 
+    this.props = {
+      incr: 1
+    }
+
       // state est l'état initial
       this.state = { // L'état de mon bouton démarre à 0
-        monCompteur: 0,
-        incr: 1
+        monCompteur: 0 
       };
 
     }
@@ -26,7 +29,7 @@ class ClassExemple extends React.Component {
         // setState : indique à React que qq chose à été changé et qu'il faut se mettre à jour
         this.setState(state => ({
             // valeur initiale => nouvelle valeur
-            monCompteur: state.monCompteur + state.incr
+            monCompteur: state.monCompteur + this.props.incr
         }));
     }
     miseAzero = () => {
@@ -50,18 +53,3 @@ class ClassExemple extends React.Component {
 }
 
 export default ClassExemple;
-
-
-// function Saluer() {
-//     return(
-//         <p>Bonjour</p>
-//     )
-// }
-
-// Class Saluer extends React.Component {
-//     render() {
-//         return(
-//                     <p>Bonjour</p>
-//                 )
-//     }
-// }
