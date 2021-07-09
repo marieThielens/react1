@@ -15,7 +15,15 @@ import DateDuJour from './components/date-du-jour/date-du-jour';
 
 import Compteur from './components/compteur/compteur';
 
-import ClassExemple from './class/classVsHook';
+import ClassExemple from './components/class/classVsHook';
+
+import Formulaire from './components/formulaire/formulaire';
+
+import FormulaireComplet from './components/formulaire/formulaireComplet';
+
+import TextColor from './components/textColor/text-color';
+
+import Calculatrice from './components/calculatrice/calculatrice';
 
 
 function App() {
@@ -51,8 +59,17 @@ function App() {
      <StateUtilisation />
 
      <DateDuJour /> */}
-     {/* <Compteur /> */}
-     <ClassExemple />
+     {/* <Compteur />
+     <Compteur incr={5}/> */}
+
+     {/* <ClassExemple /> */}
+
+     {/* <Formulaire /> */}
+    <TextColor texte="Marie" />
+     
+     <FormulaireComplet />
+
+     <Calculatrice />
 
     </div>
   );

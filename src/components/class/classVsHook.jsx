@@ -1,10 +1,9 @@
-import React from 'react'; 
-import { Component } from 'react'; // c'est l'API qui permet de gérer les composants
+import React, { Component } from 'react'; // c'est la classe qui permet de gérerer les composants
 import PropTypes from 'prop-types';
 
 
 // Pour définir un composant React avec une classe, vous devez étendre React.Component
-class ClassExemple extends React.Component {
+class ClassExemple extends Component {
 
     // Le constructeur est une méthode utilisée pour initialiser l'état d'un objet dans une classe. 
     //Il est appelé automatiquement lors de la création d'un objet dans une classe.
@@ -13,10 +12,6 @@ class ClassExemple extends React.Component {
     // On ne peut pas utiliser this à ce stade
     super(props);
     // On peut utiliser this grace à super  
-
-    // this.props = {
-    //   incr: 1
-    // };
 
       // state est l'état initial
       this.state = { // L'état de mon bouton démarre à 0
@@ -28,9 +23,9 @@ class ClassExemple extends React.Component {
     // sans utiliser la méthode bind dans le constructeur
     incremente = () => {
         // setState : indique à React que qq chose à été changé et qu'il faut se mettre à jour
-        this.setState(state => ({
+        this.setState((state, props) => ({
             // valeur initiale => nouvelle valeur
-            monCompteur: state.monCompteur + this.props.incr
+            monCompteur: state.monCompteur + props.incr
         }));
     }
     miseAzero = () => {
@@ -51,12 +46,10 @@ class ClassExemple extends React.Component {
         </>
       );
     }
-
-
   }
 
   ClassExemple.defaultProps = {
-    incr : 1
+    incr : 1 // mon bouton augmente de 1
   }
 
 export default ClassExemple;
